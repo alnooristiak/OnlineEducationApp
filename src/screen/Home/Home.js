@@ -8,7 +8,15 @@ const Home = () => {
         <View>
             <Image style={styles.imageStyle} source={require("../../../assets/heroBanner.jpg")} />
         </View>
-      <Text>This is home Home</Text>
+        <View style={styles.heroTextSec}>
+            <Text style={styles.heroFirstText}>Welcome to</Text>
+            <Text style={styles.heroSirstText}>Online Diploma Education</Text>
+        </View>
+        <View style={styles.heroParaTextSec}>
+            <Text style={styles.heroParaText}>
+                Lorem ipsum dolor sit amet consec tetur adipis icing elit. Dolo rum a quas perspi ciatis quis quam et delec tus quaerat minus.
+            </Text>
+        </View>
     </View>
   )
 }
@@ -16,8 +24,40 @@ const Home = () => {
 export default Home
 
 const styles = StyleSheet.create({
+
+    // hero section image css 
     imageStyle:{
-        width: 70,
-        height: 50,
+        width: "100%",
+        // marginLeft: 10,
+        // marginRight: 10,
+        borderRadius: 10,
+        aspectRatio: 1,
+        height: undefined,
     },
+
+    // hero section text css 
+    heroTextSec:{
+        marginTop: 15,
+    },
+    heroFirstText:{
+        textAlign: "center",
+        fontWeight: 'bold',
+        fontSize: 30,
+    },
+    heroSirstText:{
+        // marginTop: ,
+        textAlign: "center",
+        fontWeight: 'bold',
+        fontSize: 25,
+        color: '#01a3a4',
+    },
+    heroParaTextSec:{
+        marginTop: 15,
+    },
+    heroParaText:{
+        color: '#8395a7',
+        fontSize: 17,
+        textAlign: 'justify',
+    },
+
 })

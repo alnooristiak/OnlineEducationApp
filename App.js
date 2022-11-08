@@ -4,7 +4,7 @@ import Home from './src/screen/Home/Home';
 
 export default function App() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>keya kahu ke sharamse labsehe le keha..</Text>
       <Home></Home>
       <StatusBar style="auto" />
@@ -13,10 +13,8 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  // container: {
-  //   flex: 1,
-  //   backgroundColor: '#fff',
-  //   alignItems: 'center',
-  //   justifyContent: 'center',
-  // },
+  container: {
+    padding: 10,
+    marginTop: 35,
+  },
 });
