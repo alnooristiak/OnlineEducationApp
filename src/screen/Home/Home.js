@@ -4,7 +4,7 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <View>
+    <View style={styles.mainWrapper}>
         <View>
             <Image style={styles.imageStyle} source={require("../../../assets/heroBanner.jpg")} />
         </View>
@@ -25,6 +25,11 @@ export default Home
 
 const styles = StyleSheet.create({
 
+    // main wrapper section 
+    mainWrapper:{
+        padding: 15,
+    },
+
     // hero section image css 
     imageStyle:{
         width: "100%",
@@ -42,12 +47,14 @@ const styles = StyleSheet.create({
     heroFirstText:{
         textAlign: "center",
         fontWeight: 'bold',
+        textTransform: 'uppercase',
         fontSize: 30,
     },
     heroSirstText:{
         // marginTop: ,
+        textTransform: 'uppercase',
         textAlign: "center",
-        fontWeight: 'bold',
+        // fontWeight: 'bold',
         fontSize: 25,
         color: '#01a3a4',
     },
