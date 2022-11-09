@@ -17,7 +17,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
-
         {/* Home page  */}
         <Stack.Screen name="Home" component={Home} />
 
@@ -32,7 +31,6 @@ export default function App() {
 
         {/* User Detail Page  */}
         <Stack.Screen name="UserDetail" component={UserDetail} />
-        
       </Stack.Navigator>
     </NavigationContainer>
   );

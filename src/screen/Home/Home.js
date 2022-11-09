@@ -1,24 +1,31 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
+import Menus from '../Shaired/Menus';
 // import herobanner from '../../../assets/heroBanner.jpg';
 
 const Home = () => {
-  return (
-    <View style={styles.mainWrapper}>
-        <View>
-            <Image style={styles.imageStyle} source={require("../../../assets/heroBanner.jpg")} />
+    return (
+        <View style={styles.mainWrapper}>
+            <View>
+                <View>
+                    <Image style={styles.imageStyle} source={require("../../../assets/heroBanner.jpg")} />
+                </View>
+                <View style={styles.heroTextSec}>
+                    <Text style={styles.heroFirstText}>Welcome to</Text>
+                    <Text style={styles.heroSirstText}>Online Diploma Education</Text>
+                </View>
+                <View style={styles.heroParaTextSec}>
+                    <Text style={styles.heroParaText}>
+                        Lorem ipsum dolor sit amet consec tetur adipis icing elit. Dolo rum a quas perspi ciatis quis quam et delec tus quaerat minus.
+                    </Text>
+                </View>
+            </View>
+            {/* Menus  */}
+            <View>
+                <Menus></Menus>
+            </View>
         </View>
-        <View style={styles.heroTextSec}>
-            <Text style={styles.heroFirstText}>Welcome to</Text>
-            <Text style={styles.heroSirstText}>Online Diploma Education</Text>
-        </View>
-        <View style={styles.heroParaTextSec}>
-            <Text style={styles.heroParaText}>
-                Lorem ipsum dolor sit amet consec tetur adipis icing elit. Dolo rum a quas perspi ciatis quis quam et delec tus quaerat minus.
-            </Text>
-        </View>
-    </View>
-  )
+    )
 }
 
 export default Home
@@ -26,12 +33,12 @@ export default Home
 const styles = StyleSheet.create({
 
     // main wrapper section 
-    mainWrapper:{
+    mainWrapper: {
         padding: 15,
     },
 
     // hero section image css 
-    imageStyle:{
+    imageStyle: {
         width: "100%",
         // marginLeft: 10,
         // marginRight: 10,
@@ -41,16 +48,16 @@ const styles = StyleSheet.create({
     },
 
     // hero section text css 
-    heroTextSec:{
+    heroTextSec: {
         marginTop: 15,
     },
-    heroFirstText:{
+    heroFirstText: {
         textAlign: "center",
         fontWeight: 'bold',
         textTransform: 'uppercase',
         fontSize: 30,
     },
-    heroSirstText:{
+    heroSirstText: {
         // marginTop: ,
         textTransform: 'uppercase',
         textAlign: "center",
@@ -58,10 +65,10 @@ const styles = StyleSheet.create({
         fontSize: 25,
         color: '#01a3a4',
     },
-    heroParaTextSec:{
+    heroParaTextSec: {
         marginTop: 15,
     },
-    heroParaText:{
+    heroParaText: {
         color: '#8395a7',
         fontSize: 17,
         textAlign: 'justify',
