@@ -6,35 +6,30 @@ const Menus = () => {
     const navigation = useNavigation();
 
   return (
-    <View>
-      <TouchableOpacity 
-      style={styles.menuBtn}
+    <View style={styles.menuBtn}>
+      {/* <TouchableOpacity 
       onPress={() => navigation.navigate("Home")}>
         <Text>Home</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
 
-      <TouchableOpacity 
-      style={styles.menuBtn}
+      <TouchableOpacity
       onPress={() => navigation.navigate("About")}>
-        <Text>About</Text>
+        <Text style={styles.menuTextN}>About</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity 
-      style={styles.menuBtn}
+      <TouchableOpacity
       onPress={() => navigation.navigate("Course")}>
-        <Text>Course</Text>
+        <Text style={styles.menuTextN}>Course</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity 
-      style={styles.menuBtn}
+      <TouchableOpacity
       onPress={() => navigation.navigate("Contact")}>
-        <Text>Contact</Text>
+        <Text style={styles.menuTextN}>Contact</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity 
-      style={styles.menuBtn}
+      <TouchableOpacity
       onPress={() => navigation.navigate("UserDetail")}>
-        <Text>UserDetail</Text>
+        <Text style={styles.menuTextN}>UserDetail</Text>
       </TouchableOpacity>
     </View>
   )
@@ -43,7 +38,13 @@ const Menus = () => {
 export default Menus
 
 const styles = StyleSheet.create({
-    // menuBtn:{
-
-    // }
+    menuBtn:{
+        flexDirection: "row",
+        justifyContent: "space-evenly",
+        borderColor: "#95a5a6",
+    },
+    menuTextN:{
+        padding: 10,
+        color: "#16a085",
+    },
 })

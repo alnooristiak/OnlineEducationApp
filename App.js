@@ -18,19 +18,47 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         {/* Home page  */}
-        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen options={{headerShown: false,}} name="Home" component={Home} />
 
         {/* About page  */}
-        <Stack.Screen name="About" component={About} />
+        <Stack.Screen options={{
+          headerTitleStyle: {
+            fontSize: 25,
+          },
+          headerTitle: "About",
+          headerTitleAlign: "center",
+        }}
+         name="About" component={About} />
 
         {/* Contact us/Contact Page  */}
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen options={{
+          headerTitleStyle: {
+            fontSize: 25,
+          },
+          headerTitle: "Contact",
+          headerTitleAlign: "center",
+        }}
+         name="Contact" component={Contact} />
 
         {/* Course details Page  */}
-        <Stack.Screen name="Course" component={Course} />
+        <Stack.Screen options={{
+          headerTitleStyle: {
+            fontSize: 25,
+          },
+          headerTitle: "Course",
+          headerTitleAlign: "center",
+        }}
+         name="Course" component={Course} />
 
         {/* User Detail Page  */}
-        <Stack.Screen name="UserDetail" component={UserDetail} />
+        <Stack.Screen options={{
+          headerTitleStyle: {
+            fontSize: 25,
+          },
+          headerTitle: "UserDetail",
+          headerTitleAlign: "center",
+        }}
+         name="UserDetail" component={UserDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );

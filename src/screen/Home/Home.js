@@ -21,7 +21,7 @@ const Home = () => {
                 </View>
             </View>
             {/* Menus  */}
-            <View>
+            <View style={styles.menusSection}>
                 <Menus></Menus>
             </View>
         </View>
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
 
     // hero section text css 
     heroTextSec: {
-        marginTop: 15,
+        marginTop: 35,
     },
     heroFirstText: {
         textAlign: "center",
@@ -66,12 +66,21 @@ const styles = StyleSheet.create({
         color: '#01a3a4',
     },
     heroParaTextSec: {
-        marginTop: 15,
+        marginTop: 35,
     },
     heroParaText: {
         color: '#8395a7',
         fontSize: 17,
         textAlign: 'justify',
     },
+
+    // Menu section css 
+    menusSection:{
+        marginTop: 35,
+        marginBottom: 0,
+        // borderColor: "#95a5a6",
+        backgroundColor: '#bdc3c7',
+        padding: 6,
+    }
 
 })
